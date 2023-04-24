@@ -6,7 +6,7 @@
 /*   By: lebarbos <lebarbos@student.42porto.com     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/02/19 15:00:38 by lebarbos          #+#    #+#             */
-/*   Updated: 2023/02/21 11:51:46 by lebarbos         ###   ########.fr       */
+/*   Updated: 2023/02/20 18:29:09 by lebarbos         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,12 +19,13 @@ int	ft_sqrt(int nb)
 	i = 1;
 	if (nb == 1)
 		return (1);
+	
 	while (i <= nb / 2)
 	{
 		if (i * i == nb)
 			return (i);
 		else if (i >= 46341)
-			break ;
+			break;
 		i++;
 	}
 	return (0);
@@ -32,10 +33,5 @@ int	ft_sqrt(int nb)
 
 int main()
 {
-	for (int i = 0; i < 2147483647; i++)
-	{
-		if (ft_sqrt(i) != 0)
-			printf("raiz de %d : %d\n",i, ft_sqrt(i));
-	}
-
+	printf("%d\n", ft_sqrt(1));
 }
